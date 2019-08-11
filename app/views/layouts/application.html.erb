@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testoblako</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+  
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  </head>
+
+  <body id="page-top">
+    <%= render 'shared/nav' %>
+    <%= yield %>
+    <%= render 'shared/footer' %>
+    <%= render 'shared/copyright' %>
+  </body>
+</html>
